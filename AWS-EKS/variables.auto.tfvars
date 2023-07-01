@@ -11,11 +11,14 @@ vpc_enable_nat_gateway                 = true
 vpc_single_nat_gateway                 = true
 
 # EC2 Bastion Variables
-
 instance_type    = "t3.micro"
 instance_keypair = "EKS-Terraform-Key"
 
 # EKS Variables
-
-cluster_name = "ElielEKS"
+cluster_name = "EKSCluster"
+cluster_service_ipv4_cidr = "172.20.0.0/16"
+cluster_version = "1.26"
+cluster_endpoint_private_access = true
+cluster_endpoint_public_access = true
+cluster_endpoint_public_access_cidrs = ["0.0.0.0/0"]
 
