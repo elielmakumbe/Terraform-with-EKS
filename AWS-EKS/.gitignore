@@ -4,5 +4,5 @@ local-exec-output-files
 *.tfstate
 *.tfstate.*
 .DS_Store
-../.DS_Store
+**/.DS_Store
 *.tfvars
