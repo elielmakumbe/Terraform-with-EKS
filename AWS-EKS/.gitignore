@@ -1,3 +1,5 @@
 private-key
 .terraform
 local-exec-output-files
+AWS-EKS/terraform.tfstate
+AWS-EKS/terraform.tfstate.backup
